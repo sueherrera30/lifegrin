@@ -1,0 +1,35 @@
+@import "../variables.scss";
+
+.home {
+  height: 100vh;
+}
+.home__main {
+  height: 40%;
+  background: $gradientWhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  img {
+    width: 220px;
+    height: auto;
+  }
+  p {
+    font-family: $text;
+    font-weight: bold;
+    margin: 0;
+    color: $electricGreen;
+    font-size: 1.5em;
+  }
+}
+#worldSpinning {
+  -webkit-animation: rotation 20s infinite linear;
+}
+@-webkit-keyframes rotation {
+  from {
+      -webkit-transform: rotate(0deg);
+  }
+  to {
+      -webkit-transform: rotate(359deg);
+  }
+}

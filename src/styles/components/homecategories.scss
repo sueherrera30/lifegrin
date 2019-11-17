@@ -1,0 +1,17 @@
+@import "../variables.scss";
+
+.homeCategories {
+   background: pink;
+   height: 500px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.homeCategories__rows {
+  background: green;
+}
+
+.homeCategories__item {
+  background: yellow;
+}
