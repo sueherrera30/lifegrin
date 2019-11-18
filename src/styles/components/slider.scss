@@ -1,6 +1,27 @@
 .slider{
   img {
-    height:320px;
-    width: 320px;
+    height:220px;
+    width: 220px;
+  }
+}
+.slider__tips {
+  background: linear-gradient(5deg, rgba(255,255,255,0.09707633053221287) 0%, rgba(227,248,183,1) 100%);
+  display: flex;
+  justify-content: center;
+  padding-bottom: 100px;
+  & > div {
+    width: 70%;
+  }
+  img {
+    height:270px;
+    width: 270px;
+    border-radius: 50%;
+  }
+}
+.slider__title {
+  background:#E3F8B7;
+  height: 160px;
+  h1 {
+    font-size: 1.3rem !important;
   }
 }
