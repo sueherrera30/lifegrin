@@ -47,7 +47,7 @@ const HomeCategories = () => {
             <Paper className={`shake1 ${classes.paper}`}>
               BEAUTY
               <img className='homeCategories__icon' src={beauty} alt='' />
-            </Paper>       
+            </Paper>    
           </Grid>
           <Grid item xs={12} sm={5}>
             <Paper className={`shake1 ${classes.paper}`}>
@@ -71,7 +71,7 @@ const HomeCategories = () => {
             <Paper className={`shake1 ${classes.paper}`}>
               ENERGY
               <img className='homeCategories__icon' src={energy} alt='' />
-            </Paper>     
+            </Paper>   
           </Grid>
           <Grid item xs={6} sm={3}>
             <Paper className={`shake1 ${classes.paper}`}>
