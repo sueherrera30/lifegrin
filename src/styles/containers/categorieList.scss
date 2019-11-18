@@ -1,0 +1,83 @@
+@import "../variables.scss";
+
+.categorieList {
+ min-height: 100vh;
+ display: flex;
+}
+.categorieList__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    margin-left: 0%;
+  }
+}
+.categorieList__info {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+.categorieList__list {
+  width: 80%;
+}
+.categorieList__product {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+  margin: 1rem;
+  min-height: 150px;
+  background: linear-gradient(113deg, rgba(255, 255, 255, 0.004) 0%, rgba(145, 242, 145, 0.36) 92%);
+  img {
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+    align-self: center;
+  }
+  span {
+    color: $darkGreen;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+}
+.categorieList__product--info {
+  color: gray;
+}
+.categorieList__product--price {
+  color: $darkGreen;
+  font-weight: bolder;
+}
+.categorieList__lateralList {
+  ul {
+    padding-left: 0px;
+    margin-top: 0px;
+  }
+  h3 {
+    color: $green;
+    text-align: center;
+    font-weight: lighter;
+  }
+  li {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $darkGreen;
+    &:hover {
+      font-size: 1.5rem;
+      p {
+        color: $electricGreen;
+      }
+    }
+    img {
+      width: 20px;
+      height: 20px;
+      margin-right: 15px;
+    }
+  }
+  
+}
+.categorieList__results {
+    color: $electricGreen;
+    margin-left: 15px;
+}

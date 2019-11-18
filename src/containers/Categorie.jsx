@@ -1,8 +1,59 @@
 import React from 'react';
+import Paper from '@material-ui/core/Paper';
+import Grid from '@material-ui/core/Grid';
+import stain from '../assets/static/stain2.png';
+import product from '../assets/static/slider/desodorante.jpg';
+import '../styles/containers/categorieList.scss';
+import imageStorage from '../assets/imagestorage';
 
-const Categorie = () => (
-  <div>
-    whatupp Categorie!
-  </div>
-);
+const Categorie = () => {
+  const list = imageStorage.listIcons;
+  return (
+    <div className='categorieList'>
+      <div className='categorieList__info'>
+        <div className='homeCategories__title categorieList__title'>
+          <h1>Beauty </h1>
+          <img src={stain} alt='stain' />
+        </div>
+        <div className='categorieList__lateralList'>
+          <h3> Categorie List:</h3>
+          <ul>
+            {
+              list.map((category) => {
+                return (
+                  <li>
+                    <img src={category.img} alt='category-icon' />
+                    <p>{category.name}</p>
+                  </li>
+                );
+              })
+            }
+          </ul>
+        </div>
+      </div>
+      <div className='categorieList__list'>
+        <p className='categorieList__results'> 20 articulos encontrados</p>
+        <Grid container>
+          {
+            Array.from(Array(16), (e, i) => {
+              return (
+                <Grid item lg={4}>
+                  <Paper className='categorieList__product' key={i}>
+                    <span>Product´s Title</span>
+                    <img src={product} alt='stain' />
+                    <div className='categorieList__product--info'>
+                      <p className='categorieList__product--price'>$234.00</p>
+                      <p>Description of the product</p>
+                    </div>
+                  </Paper>
+                </Grid>
+              );
+            })
+          }
+        </Grid>
+      </div>
+    </div>
+  );
+}
+
 export default Categorie;
