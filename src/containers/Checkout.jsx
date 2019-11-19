@@ -17,8 +17,9 @@ const Checkout = () => {
           <h1>Mineral desodorant </h1>
           <img src={stain} alt='stain' className='product--bg' />
         </div>
-        <div className='product__details'>
+        <div className='product__details checkout__details'>
           <img className='checkout__img' src={product} alt='product selected' />
+          <h4 className='product__details--price'>final price</h4>
           <h1 className='product__details--price'>$245</h1>
           <div className='product__details--send'>
             <img src={sending} alt='stain' className='product__icon' />

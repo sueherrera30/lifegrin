@@ -31,6 +31,11 @@
       height: 40px;
     }
   }
+  &__details {
+    h1,h4 {
+      margin: 0;
+    }
+  }
 }
 
 
