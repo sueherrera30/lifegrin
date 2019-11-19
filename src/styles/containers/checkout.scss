@@ -1,0 +1,36 @@
+@import "../variables.scss";
+.checkout {
+  &__img {
+    width: 300px;
+    height: auto;
+  }
+  &__info {
+    border-right: dotted 2px $yellow;
+    margin: 10px 0 !important;
+  }
+  &__image {
+     background: linear-gradient(180deg, rgba(255,255,255,0.004639355742296902) 0%, rgba(194,242,97,0.11668417366946782) 97%) !important;
+     padding: 50px;
+     justify-content: center;
+     align-items: center;
+  
+  }
+  &__input {
+    margin: 10px 0px;
+    background: transparent;
+    border: none;
+    border-bottom: solid 1px $darkGreen;
+    padding: 5px 10px;
+    font-family: $text;
+    width: 350px;
+  }
+  &__form {
+    color: $electricGreen;
+    button {
+      width: 150px;
+      height: 40px;
+    }
+  }
+}
+
+

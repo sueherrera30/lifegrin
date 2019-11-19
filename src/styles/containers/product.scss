@@ -1,0 +1,109 @@
+@import "../variables.scss";
+
+.product {
+  display:flex;
+  min-height: auto;
+}
+.product__title {
+  font-size: 1.5rem !important;
+  margin:0 70px;
+  border-bottom: dotted 2px $electricGreen;
+}
+.product--bg {
+  opacity: 0.5;
+}
+.product__image {
+  width:60%;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(225deg, rgba(255,255,255,0.004639355742296902) 0%, rgba(48,242,242,0.22032563025210083) 97%);
+  img {
+    margin-top: 70px;
+    width: 400px;
+    border-radius: 50%;
+    height: auto;
+    align-self: center;
+  }
+  h3 {
+    color:$electricGreen;
+    text-align: center;
+  }
+}
+.product__info {
+  width:40%;
+  border-left: dotted 2px $yellow;
+   margin: 50px 0;
+}
+.product__icon {
+  width: 25px;
+  height: 25px;
+  margin: 0px 10px;
+}
+.product__details {
+  color: $darkGreen;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.product__details--price {
+  color: $electricGreen;
+  text-align: center;
+}
+
+.product__form--buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 200px;
+  margin:10px;
+  button {
+    border-radius: 15px;
+    background: transparent;
+    border: solid 0.8px $darkGreen;
+    padding: 5px 10px;
+    font-family: $text;
+  }
+  button:hover {
+    background:$electricGreen;
+    color: white;
+    border: transparent;
+   }
+}
+.product__form--plus {
+    background: transparent;
+    border: solid 0.8px $darkGreen;
+}
+.product__details--quantity{
+  text-align: center;
+  margin: 15px;
+}
+.product__slider {
+  margin: 20px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  & > div {
+    width: 25%;
+    margin-left: 40px;
+  }
+  img {
+    margin-top: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: none !important;
+  }
+}
+.product__paper {
+  width: 180px !important;
+  height: 200px;
+  display: flex !important;
+  align-items: center;
+  font-size: 12px;
+  color: $darkGreen;
+  flex-direction: column;
+  justify-content: center;
+  border: solid 0.8px $darkGreen;
+  border-radius: 15px;
+}

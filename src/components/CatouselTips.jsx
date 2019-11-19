@@ -1,7 +1,6 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import React from 'react';
 import Slider from 'react-slick';
-
 import imageStorage from '../assets/imagestorage';
 import stain from '../assets/static/stain2.png';
 import '../styles/components/homecategories.scss';

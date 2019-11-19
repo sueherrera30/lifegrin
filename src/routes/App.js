@@ -12,21 +12,21 @@ import ProductDetails from '../containers/ProductDetails';
 import NotFound from '../containers/NotFound';
 
 const App = () => (
- <BrowserRouter>
-  <Layout>
-    <Switch>
-      <Route exact path='/' component={Home} />
-      <Route exact path='/login' component={LogIn} />
-      <Route exact path='/register' component={Register} />
-      <Route exact path='/categorie' component={Categorie} />
-      <Route exact path='/checkout' component={Checkout} />
-      <Route exact path='/confirmation' component={Confirmation} />
-      <Route exact path='/information' component={Information} />
-      <Route exact path='/product' component={ProductDetails} />
-      <Route component={NotFound} />
-    </Switch>   
-  </Layout>
- </BrowserRouter>
+  <BrowserRouter>
+    <Layout>
+      <Switch>
+        <Route exact path='/' component={Home} />
+        <Route exact path='/login' component={LogIn} />
+        <Route exact path='/register' component={Register} />
+        <Route exact path='/categorie' component={Categorie} />
+        <Route exact path='/checkout' component={Checkout} />
+        <Route exact path='/confirmation' component={Confirmation} />
+        <Route exact path='/information' component={Information} />
+        <Route exact path='/product' component={ProductDetails} />
+        <Route component={NotFound} />
+      </Switch>
+    </Layout>
+  </BrowserRouter>
   
 );
 

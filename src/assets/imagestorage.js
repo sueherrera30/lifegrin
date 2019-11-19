@@ -14,14 +14,18 @@ import tip3 from './static/slider/consejo3.jpg';
 import tip4 from './static/slider/consejo4.jpg';
 import responsable from './static/slider/responsable.jpg';
 import recycle from './static/slider/recicla.jpg';
-import home from '../assets/static/categories/home.png';
-import beauty from '../assets/static/categories/beauty.png';
-import food from '../assets/static/categories/food.png';
-import healthy from '../assets/static/categories/healthy.png';
-import energy from '../assets/static/categories/energy.png';
-import plants from '../assets/static/categories/plants.png';
+import home from './static/categories/home.png';
+import beauty from './static/categories/beauty.png';
+import food from './static/categories/food.png';
+import healthy from './static/categories/healthy.png';
+import energy from './static/categories/energy.png';
+import plants from './static/categories/plants.png';
+import cream from './static/crema.jpg';
+import lipstick from './static/balsamo.jpg';
+import feet from './static/pies.jpg';
 
 const imageStorage = {
+  relatedProducts: [cream, feet, lipstick, cope],
   names: [glass2, honey, bags, market, sales, desodorant, glass1, cope, glass3, xmas],
   tips: [responsable, tip1, tip2, tip3, tip4, recycle],
   listIcons: [
