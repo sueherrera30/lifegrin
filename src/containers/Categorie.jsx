@@ -1,7 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
-import { Link } from 'react-router-dom';
 import stain from '../assets/static/stain2.png';
 import product from '../assets/static/slider/desodorante.jpg';
 import '../styles/containers/categorieList.scss';
@@ -25,7 +25,7 @@ const Categorie = () => {
                   <li>
                     <img src={category.img} alt='category-icon' />
                     <Link to='/'>
-                      {category.name}
+                      <p>{category.name}</p>
                     </Link>
                   </li>
                 );
@@ -41,14 +41,16 @@ const Categorie = () => {
             Array.from(Array(16), (e, i) => {
               return (
                 <Grid item lg={4}>
-                  <Paper className='categorieList__product' key={i}>
-                    <span>Product´s Title</span>
-                    <img src={product} alt='stain' />
-                    <div className='categorieList__product--info'>
-                      <p className='categorieList__product--price'>$234.00</p>
-                      <p>Description of the product</p>
-                    </div>
-                  </Paper>
+                  <Link to='/product' style={{ textDecoration: 'none' }}>
+                    <Paper className='categorieList__product' key={i}>
+                      <span>Product´s Title</span>
+                      <img src={product} alt='stain' />
+                      <div className='categorieList__product--info'>
+                        <p className='categorieList__product--price'>$234.00</p>
+                        <p>Description of the product</p>
+                      </div>
+                    </Paper>
+                  </Link>
                 </Grid>
               );
             })

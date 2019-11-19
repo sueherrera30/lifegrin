@@ -27,6 +27,9 @@
   padding: 1rem;
   margin: 1rem;
   min-height: 150px;
+  a {
+    color:$darkGreen;
+  }
   background: linear-gradient(113deg, rgba(255, 255, 255, 0.004) 0%, rgba(145, 242, 145, 0.36) 92%);
   img {
     width: 200px;
