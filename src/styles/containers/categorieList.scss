@@ -62,10 +62,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: $darkGreen;
+    a {
+      color: $darkGreen;
+      text-decoration: none;
+    }
     &:hover {
       font-size: 1.5rem;
-      p {
+      a {
         color: $electricGreen;
       }
     }

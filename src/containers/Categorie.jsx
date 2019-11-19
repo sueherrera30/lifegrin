@@ -1,6 +1,7 @@
 import React from 'react';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
+import { Link } from 'react-router-dom';
 import stain from '../assets/static/stain2.png';
 import product from '../assets/static/slider/desodorante.jpg';
 import '../styles/containers/categorieList.scss';
@@ -23,7 +24,9 @@ const Categorie = () => {
                 return (
                   <li>
                     <img src={category.img} alt='category-icon' />
-                    <p>{category.name}</p>
+                    <Link to='/'>
+                      {category.name}
+                    </Link>
                   </li>
                 );
               })

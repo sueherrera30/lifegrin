@@ -1,5 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import { Link } from 'react-router-dom';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import stain from '../assets/static/stain2.png';
@@ -44,40 +45,52 @@ const HomeCategories = () => {
       <div className={classes.root}>
         <Grid container spacing={8} xs={10}>
           <Grid item xs={12} sm={4}>
-            <Paper className={`shake1 ${classes.paper}`}>
-              BEAUTY
-              <img className='homeCategories__icon' src={beauty} alt='' />
-            </Paper>    
+            <Link to='/categorie'>
+              <Paper className={`shake1 ${classes.paper}`}>
+                BEAUTY
+                <img className='homeCategories__icon' src={beauty} alt='' />
+              </Paper>
+            </Link>
           </Grid>
           <Grid item xs={12} sm={5}>
-            <Paper className={`shake1 ${classes.paper}`}>
-              HOME
-              <img className='homeCategories__icon' src={home} alt='' />
-            </Paper>
+            <Link to='/categorie'>
+              <Paper className={`shake1 ${classes.paper}`}>
+                HOME
+                <img className='homeCategories__icon' src={home} alt='' />
+              </Paper>
+            </Link>
           </Grid>
           <Grid item xs={6} sm={3}>
-            <Paper className={`shake1 ${classes.paper}`}>
-              FOOD
-              <img className='homeCategories__icon' src={food} alt='' />
-            </Paper>
+            <Link to='/categorie'>
+              <Paper className={`shake1 ${classes.paper}`}>
+                FOOD
+                <img className='homeCategories__icon' src={food} alt='' />
+              </Paper>
+            </Link>
           </Grid>
           <Grid item xs={6} sm={3}>
-            <Paper className={`shake1 ${classes.paper}`}>
-              HEALTH
-              <img className='homeCategories__icon' src={healthy} alt='' />
-            </Paper>  
+            <Link to='/categorie'>
+              <Paper className={`shake1 ${classes.paper}`}>
+                HEALTH
+                <img className='homeCategories__icon' src={healthy} alt='' />
+              </Paper>
+            </Link>  
           </Grid>
           <Grid item xs={6} sm={6}>
-            <Paper className={`shake1 ${classes.paper}`}>
+            <Link to='/categorie'>
+              <Paper className={`shake1 ${classes.paper}`}>
               ENERGY
-              <img className='homeCategories__icon' src={energy} alt='' />
-            </Paper>   
+                <img className='homeCategories__icon' src={energy} alt='' />
+              </Paper>
+            </Link>
           </Grid>
           <Grid item xs={6} sm={3}>
-            <Paper className={`shake1 ${classes.paper}`}>
-              PLANTS
-              <img className='homeCategories__icon' src={plants} alt='' />
-            </Paper> 
+            <Link to='/categorie'>
+              <Paper className={`shake1 ${classes.paper}`}>
+                PLANTS
+                <img className='homeCategories__icon' src={plants} alt='' />
+              </Paper>
+            </Link>
           </Grid>
         </Grid>
       </div>
