@@ -1,4 +1,4 @@
-import React from 'react';
+ import React from 'react';
 import Interactions from './Interactions';
 import '../styles/components/header.scss';
 

@@ -1,14 +1,37 @@
 @import "../variables.scss";
 
 .home__main {
-  height: 400px;
+  height: 500px;
   background: $gradientWhite;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  &--container {
+    width: 65%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  button {
+    border-radius: 40px;
+    background: transparent;
+    border: solid 0.8px $darkGreen;
+    padding: 5px 10px;
+    font-family: "Quicksand", sans-serif;
+    width: 180px;
+    height: 50px;
+    font-size: 1rem;
+    color:$darkGreen;
+    margin: 25px 0px;
+  }
+  button:hover {
+    background:$electricGreen;
+    color: white;
+    border: transparent;
+   }
   img {
-    width: 220px;
+    width: 300px;
     height: auto;
   }
   h4 {
@@ -16,14 +39,14 @@
     font-weight: bold;
     margin: 0;
     color: $green;
-    font-size: 1.7em;
+    font-size: 5em;
   }
   p {
     font-family: $text;
     font-weight: bold;
     margin: 0;
     color: $electricGreen;
-    font-size: 1.5em;
+    font-size: 3em;
   }
 }
 #worldSpinning {

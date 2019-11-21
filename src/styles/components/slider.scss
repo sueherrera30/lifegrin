@@ -1,4 +1,10 @@
 .slider{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  .slick-slider {
+    width: 80%;
+  }
   img {
     height:220px;
     width: 220px;
