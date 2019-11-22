@@ -22,7 +22,7 @@ const SliderProducts = () => {
         {
           relatedProducts.map((slide) => {
             return (
-              <div className='product__paper'>
+              <div className='product__paper' key={slide}>
                 <img src={slide} alt='slideImages' />
                 <h2>$55</h2>
                 <p>crema corporal órganica</p>

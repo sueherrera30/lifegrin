@@ -28,7 +28,7 @@ const SlideTips = () => {
           {
             imagesLinks.map((slide) => {
               return (
-                <div>
+                <div key={slide}>
                   <img src={slide} alt='slideImages' />
                 </div>
               );

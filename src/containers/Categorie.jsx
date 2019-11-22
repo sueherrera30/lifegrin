@@ -22,7 +22,7 @@ const Categorie = () => {
             {
               list.map((category) => {
                 return (
-                  <li>
+                  <li key={slide}>
                     <img src={category.img} alt='category-icon' />
                     <Link to='/'>
                       <p>{category.name}</p>

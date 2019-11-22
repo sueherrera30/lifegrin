@@ -22,7 +22,7 @@ const MainSlider = () => {
           imagesLinks.map((slide) => {
             return (
               <div>
-                <img src={slide} alt='slideImages' />
+                <img src={slide} alt='slideImages' key={slide} />
               </div>
             );
           })

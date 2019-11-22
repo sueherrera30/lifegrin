@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 import stain from '../assets/static/stain1.png';
 import product from '../assets/static/slider/desodorante.jpg';
 import '../styles/containers/categorieList.scss';
@@ -11,6 +12,12 @@ import credit from '../assets/static/buyIcons/credit.png';
 import SliderProducts from '../components/CatouselProducts';
 
 const ProductDetails = () => {
+
+  // const simpson = 'https://thesimpsonsquoteapi.glitch.me/quotes';
+  const eco = 'http://localhost:3000/api/product';
+  axios.get(eco)
+    .then((res) => console.log(res));
+
   return (
     <div className='product'>
       {/* left side */}
