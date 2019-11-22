@@ -13,9 +13,9 @@ import SliderProducts from '../components/CatouselProducts';
 
 const ProductDetails = () => {
 
-  // const simpson = 'https://thesimpsonsquoteapi.glitch.me/quotes';
-  const eco = 'http://localhost:3000/api/product';
-  axios.get(eco)
+  const simpson = 'https://thesimpsonsquoteapi.glitch.me/quotes';
+  // const eco = 'http://localhost:3000/api/product';
+  axios.get(simpson)
     .then((res) => console.log(res));
 
   return (
