@@ -10,6 +10,7 @@ import master from '../assets/static/buyIcons/master.png';
 import credit from '../assets/static/buyIcons/credit.png';
 import SliderProducts from '../components/CatouselProducts';
 
+
 const ProductDetails = () => {
   return (
     <div className='product'>
@@ -57,6 +58,7 @@ const ProductDetails = () => {
         </div>
       </div>
     </div>
-  )
+  );
 };
+
 export default ProductDetails;
