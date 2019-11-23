@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 import { Link } from 'react-router-dom';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
@@ -9,6 +10,12 @@ import imageStorage from '../assets/imagestorage';
 
 const Categorie = () => {
   const list = imageStorage.listIcons;
+  const api = 'https://apilifegrin.herokuapp.com/api/product';
+    // fetch data from a url endpoint
+    const data = await axios.get(api);
+    console.log(data);
+  }
+  gettingData();
   return (
     <div className='categorieList'>
       <div className='categorieList__info'>
@@ -35,7 +42,7 @@ const Categorie = () => {
         </div>
       </div>
       <div className='categorieList__list'>
-        <p className='categorieList__results'> 20 articulos encontrados</p>
+        <p className='categorieList__results'> 20 matches found</p>
         <Grid container>
           {
             Array.from(Array(16), (e, i) => {
