@@ -49,6 +49,10 @@
     font-size: 3em;
   }
 }
+.home--button-link {
+  text-decoration: none;
+  color: $darkGreen;
+}
 #worldSpinning {
   -webkit-animation: rotation 20s infinite linear;
 }
