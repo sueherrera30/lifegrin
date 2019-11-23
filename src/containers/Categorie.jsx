@@ -22,7 +22,7 @@ const Categorie = () => {
             {
               list.map((category) => {
                 return (
-                  <li key={slide}>
+                  <li>
                     <img src={category.img} alt='category-icon' />
                     <Link to='/'>
                       <p>{category.name}</p>
@@ -42,7 +42,7 @@ const Categorie = () => {
               return (
                 <Grid item lg={4}>
                   <Link to='/product' style={{ textDecoration: 'none' }}>
-                    <Paper className='categorieList__product' key={i}>
+                    <Paper className='categorieList__product'>
                       <span>Product´s Title</span>
                       <img src={product} alt='stain' />
                       <div className='categorieList__product--info'>
@@ -59,6 +59,6 @@ const Categorie = () => {
       </div>
     </div>
   );
-}
+};
 
 export default Categorie;

@@ -11,7 +11,7 @@ const SliderProducts = () => {
     dots: false,
     infinite: true,
     speed: 200,
-    slidesToShow: 1,
+    slidesToShow: 3,
     slidesToScroll: -1,
     autoplay: true,
     arrows: false,
@@ -22,7 +22,7 @@ const SliderProducts = () => {
         {
           relatedProducts.map((slide) => {
             return (
-              <div className='product__paper' key={slide}>
+              <div className='product__paper'>
                 <img src={slide} alt='slideImages' />
                 <h2>$55</h2>
                 <p>crema corporal órganica</p>

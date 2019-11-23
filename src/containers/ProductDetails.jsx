@@ -23,7 +23,7 @@ const ProductDetails = () => {
       {/* left side */}
       <div className='product__image'>
         <img src={product} alt='product selected' />
-        <h3>Productos relacionados</h3>
+        <h3>Related products</h3>
         <SliderProducts />
       </div>
       {/* right side */}
@@ -38,7 +38,7 @@ const ProductDetails = () => {
           <p className='product__details--stock'> stock disponible</p>
           <p>
             <img src={credit} alt='stain' className='product__icon' />
-            12 meses sin intereses
+            pay in 12 months
           </p>
           <div className='product__cardImages'>
             <img src={visa} alt='stain' className='product__icon' />
@@ -47,10 +47,10 @@ const ProductDetails = () => {
           </div>
           <div className='product__details--send'>
             <img src={sending} alt='stain' className='product__icon' />
-              Envios a todo el pais
+              delivery around the country
           </div>
           <form className='product__form'>
-            <h2 className='product__details--price'>$245</h2>
+            <h2 className='product__details--price'>$8</h2>
             <div className='product__details--quantity'>
               <span>Quantity:</span>
               <span> 1 </span>
